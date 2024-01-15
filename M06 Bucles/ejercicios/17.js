@@ -7,6 +7,9 @@ function colors(color) {
   // Si no es ninguno de esos colores           --> "Color not found".
   // PISTA: utilizar el statement SWITCH.
   // Tu código:
+  let colores = ['blue', 'red', 'green', 'orange'];
+  return (colores.indexOf(color) != -1) ? "This is " + color:"Color not found";
+  // Si bien puedo usar un switch, me parece que con un array y buscando con un indexOf() se repite menos codigo
 }
 
 module.exports = colors;
